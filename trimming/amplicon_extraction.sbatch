@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH -J amplicon_extract
+#SBATCH -J amplicon_extraction
 #SBATCH -t 1-00:00:00
 #SBATCH -c 4
 #SBATCH -p Node3
