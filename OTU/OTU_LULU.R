@@ -1,5 +1,5 @@
-ASV_TABLE = "ASV_results/ASV_table.csv"
-SWARM_TXT = "OTU_results/swarm_log.txt"
+ASV_TABLE = "../ASV_results/ASV_table.csv"
+SWARM_TXT = "../OTU_results/swarm_log.txt"
 
 ASV_m <- t(read.csv(ASV_TABLE, row.names=1))
 OTU_clusters <- readLines(SWARM_TXT)
@@ -22,7 +22,7 @@ sequences <- rownames(OTU_m)
 OTU_ids <- paste0("OTU", seq_along(sequences))
 rownames(OTU_m) <- OTU_ids
 
-write.csv(OTU_m, "OTU_results/OTU_table.csv")
+write.csv(OTU_m, "../OTU_results/OTU_table.csv")
 
 fasta_lines <- character(length(sequences) * 2)
 for (i in seq_along(sequences)) {
@@ -30,6 +30,6 @@ for (i in seq_along(sequences)) {
   fasta_lines[(i - 1) * 2 + 2] <- sequences[i]
 }
 
-writeLines(fasta_lines, "OTU_results/OTU_sequences.fasta")
+writeLines(fasta_lines, "../OTU_results/OTU_sequences.fasta")
 
 

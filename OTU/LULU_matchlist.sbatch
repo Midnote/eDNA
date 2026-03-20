@@ -5,7 +5,7 @@
 #SBATCH --time=24:00:00
 #SBATCH --partition=Node3
 
-cd OTU_results
+cd ../OTU_results
 
 makeblastdb -in OTU_sequences.fasta -parse_seqids -dbtype nucl
 

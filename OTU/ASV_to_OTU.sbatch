@@ -5,8 +5,10 @@
 #SBATCH --time=24:00:00
 #SBATCH --partition=Node3
 
-ASV_FASTA="ASV_results/pooled.fasta"
-SWARMS_TXT="OTU_results/swarm_log.txt"
+mkdir -p "../OTU_results"
+
+ASV_FASTA="../ASV_results/pooled.fasta"
+SWARMS_TXT="../OTU_results/swarm_log.txt"
 
 swarm --usearch-abundance --difference 1 --fastidious \
 --output-file "${SWARMS_TXT}" "${ASV_FASTA}"
