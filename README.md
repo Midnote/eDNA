@@ -15,7 +15,9 @@ To be able to run this project the following things are needed:
 
 ## Practical workflow
 **1. Move all codes in this repository into a working directory.**
+
 **2.Prepare paired-end sequencing data in a directory named "rawdata", under the working directory.**
+
 **3. Trim adaptors and primers with this command**
 ```bash
 bash array_prep_dada2.sh # "prep_dada2.sbatch" is submitted to slurm node in array mode.
