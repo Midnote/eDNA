@@ -34,4 +34,4 @@ seqtab.nochim <- removeBimeraDenovo(seqtab, method="consensus", multithread=TRUE
 results <- file.path(work_dir, "asv_results", "pooled.fasta")
 uniquesToFasta(seqtab.nochim, results)
 
-write.csv(seqtab.nochim, file = "asv_results/ASV_table.csv")
+write.csv(seqtab.nochim, file = "../asv_results/ASV_table.csv")

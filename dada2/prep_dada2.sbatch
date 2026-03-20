@@ -17,7 +17,7 @@ cutadapt -a AGATCGGAAGAGCACACGTCTGAACTCCAGTCAX \
 -O 20 \
 -o "trimmed/trim-${R1_BASE}" \
 -p "trimmed/trim-${R2_BASE}" \
-"rawdata/${R1_BASE}" "rawdata/${R2_BASE}"
+"../rawdata/${R1_BASE}" "../rawdata/${R2_BASE}"
 
 cutadapt -g XGGWACWGGWTGAACWGTWTAYCCYCC \
 -G XTADACYTCDGGRTGDCCRAARAAYCA \
@@ -25,6 +25,6 @@ cutadapt -g XGGWACWGGWTGAACWGTWTAYCCYCC \
 --revcomp \
 -O 15 --no-indels \
 --discard-untrimmed \
--o "dada2raw/dada2raw_${R1_BASE}" \
--p "dada2raw/dada2raw_${R2_BASE}" \
-"trimmed/trim-${R1_BASE}" "trimmed/trim-${R2_BASE}"
+-o "../dada2raw/dada2raw_${R1_BASE}" \
+-p "../dada2raw/dada2raw_${R2_BASE}" \
+"../trimmed/trim-${R1_BASE}" "../trimmed/trim-${R2_BASE}"
