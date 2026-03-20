@@ -28,11 +28,11 @@ bash array_dada2_pooling.sh # "submit_dada2_pooling.sbatch" is submitted to slur
 ```bash
 sbatch ASV_to_OTU.sbatch
 ```
-**6. Preapre for LULU curation with this command"
+**6. Preapre for LULU curation with this command"**
 ```bash
 sbatch submit_OTU_LULU.sbatch # "OTU_LULU.R" is run"
 ```
-**7. Perform LULU curation with this command"
+**7. Perform LULU curation with this command"**
 ```bash
 sbatch LULU_matchlist.sbatch
 ```
