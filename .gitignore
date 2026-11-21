@@ -1,0 +1,35 @@
+# Sequencing inputs and generated analysis directories
+/rawdata/
+dada2raw/
+trimmed/
+merged/
+results/
+fasta_results/
+dereplicated/
+aligned_mafft/
+aligned_macse/
+filtered_dada2/
+asv_results/
+ASV_results/
+OTU_results/
+
+# Raw reads, generated file lists and quality-control reports
+*.fastq
+*.fastq.gz
+*.fq
+*.fq.gz
+/raw_filelist.txt
+/R1_filelist.txt
+*_fastqc.html
+*_fastqc.zip
+multiqc_report.html
+multiqc_data/
+
+# Slurm and local R session files
+logs/
+errors/
+slurm-*.out
+.Rhistory
+.RData
+.Rproj.user/
+.DS_Store
